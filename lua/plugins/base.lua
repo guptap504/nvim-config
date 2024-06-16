@@ -14,13 +14,13 @@ return {
   { "numToStr/Comment.nvim" },
 
   -- the opts function can also be used to change the default opts:
-  {
-    "nvim-lualine/lualine.nvim",
-    event = "VeryLazy",
-    opts = function(_, opts)
-      table.insert(opts.sections.lualine_x, "😄")
-    end,
-  },
+  -- {
+  --   "nvim-lualine/lualine.nvim",
+  --   event = "VeryLazy",
+  --   opts = function(_, opts)
+  --     table.insert(opts.sections.lualine_x, "😄")
+  --   end,
+  -- },
 
   -- -- use mini.starter instead of alpha
   { import = "lazyvim.plugins.extras.ui.mini-starter" },
@@ -29,15 +29,15 @@ return {
   { import = "lazyvim.plugins.extras.lang.json" },
 
   -- add any tools you want to have installed below
-  {
-    "williamboman/mason.nvim",
-    opts = {
-      ensure_installed = {
-        "stylua",
-        "shellcheck",
-        "shfmt",
-        "flake8",
-      },
-    },
-  },
+  -- {
+  --   "williamboman/mason.nvim",
+  --   opts = {
+  --     ensure_installed = {
+  --       "stylua",
+  --       "shellcheck",
+  --       "shfmt",
+  --       "flake8",
+  --     },
+  --   },
+  -- },
 }
