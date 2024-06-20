@@ -11,19 +11,37 @@ return {
   },
 
   -- toggle comment
-  { "numToStr/Comment.nvim" },
+  {
+    "numToStr/Comment.nvim",
+    -- opts = {
+    --   toggler = {
+    --     -- Line-comment toggle keymap
+    --     line = "gcc",
+    --     ---Block-comment toggle keymap
+    --     block = "gbc",
+    --   },
+    --   ---LHS of operator-pending mappings in NORMAL and VISUAL mode
+    --   opleader = {
+    --     ---Line-comment keymap
+    --     line = "gc",
+    --     ---Block-comment keymap
+    --     block = "gb",
+    --   },
+    --   ---LHS of extra mappings
+    --   extra = {
+    --     ---Add comment on the line above
+    --     above = "gcO",
+    --     ---Add comment on the line below
+    --     below = "gco",
+    --     ---Add comment at the end of line
+    --     eol = "gcA",
+    --   },
+    -- },
+  },
 
   { "LunarVim/bigfile.nvim" },
-  -- the opts function can also be used to change the default opts:
-  -- {
-  --   "nvim-lualine/lualine.nvim",
-  --   event = "VeryLazy",
-  --   opts = function(_, opts)
-  --     table.insert(opts.sections.lualine_x, "😄")
-  --   end,
-  -- },
 
-  -- -- use mini.starter instead of alpha
+  -- use mini.starter instead of alpha
   { import = "lazyvim.plugins.extras.ui.mini-starter" },
 
   -- add jsonls and schemastore packages, and setup treesitter for json, json5 and jsonc
