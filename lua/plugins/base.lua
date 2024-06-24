@@ -41,6 +41,8 @@ return {
 
   { "LunarVim/bigfile.nvim" },
 
+  { "tpope/vim-dotenv" },
+
   -- use mini.starter instead of alpha
   { import = "lazyvim.plugins.extras.ui.mini-starter" },
 
