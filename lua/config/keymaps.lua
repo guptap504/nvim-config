@@ -16,4 +16,4 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
-vim.keymap.set("n", "<leader>xd", "<cmd> lua vim.diagnostic.open_float() <CR>")
+-- vim.keymap.set("n", "<leader>xd", "<cmd> lua vim.diagnostic.open_float() <CR>")

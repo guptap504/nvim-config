@@ -15,6 +15,11 @@ return {
         preset = "modern",
         delay = 50,
     } },
+    { "neovim/nvim-lspconfig", opts = {
+        diagnostics = {
+            virtual_text = false,
+        },
+    } },
     { "LunarVim/bigfile.nvim" },
 
     { "tpope/vim-dotenv" },
